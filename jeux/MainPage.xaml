@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jeux.MainPage">
+    <Frame CornerRadius="10" Padding="10"  BackgroundColor="LightGray" Margin="300,50,300,20">
+        <VerticalStackLayout Padding="20">
+            <Label HorizontalOptions="Center" Text="Dice Game" FontSize="Title" Margin="0,0,0,20" TextColor="Black"></Label>
+            <HorizontalStackLayout HorizontalOptions="Center" >
+                <Label x:Name="Player1ScoreLabel" Text="0" FontSize="Title" TextColor="DarkBlue" />
+                <Label x:Name="Player2ScoreLabel" Text="0" FontSize="Title"  TextColor="DarkRed" Margin="130,0,0,0"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Joueur 1" FontSize="Large"  TextColor="DarkBlue" />
+                <Label Text="Joueur 2" FontSize="Large" TextColor="DarkRed" Margin="20,0,0,30" />
+            </HorizontalStackLayout>
+            <Button Text="Lancer les dés" Clicked="OnLaunchClicked" FontSize="Large" HorizontalOptions="Center" BackgroundColor="Green" TextColor="White"/>
+            <HorizontalStackLayout HorizontalOptions="Center" >
+                <Label x:Name="dice1" Text="0" FontSize="Title" TextColor="Black" Margin="0,20,0,0" />
+                <Label x:Name="dice2" Text="0" FontSize="Title"  TextColor="Black" Margin="130,20,0,0"/>
+            </HorizontalStackLayout>
+            <Label x:Name="Annonce" HorizontalOptions="Center" Text="" FontSize="Medium" TextColor="Black"></Label>
+            <Button Text="Reset Score" Clicked="OnResetClicked" Margin="20" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="Black"/>
+        </VerticalStackLayout>
+    </Frame>
+</ContentPage>
