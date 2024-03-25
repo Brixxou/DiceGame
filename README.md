@@ -11,7 +11,7 @@ Cette application est un simple jeu de lancer de dés conçu pour permettre aux 
 
 ## Captures d'écran
 
-!
+![Capture d'écran de l'application](screen_README.png)
 
 ## Installation
 
